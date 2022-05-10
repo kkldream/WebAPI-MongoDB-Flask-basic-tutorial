@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="getFindAll()">查詢全部</button>
+    <p id="textFindAll"></p>
+    <input type='text' id='textBoxFind' />
+    <button onclick="getFind()">查詢</button>
+    <p id="textFind"></p>
+    <input type='text' id='textBoxDelete' />
+    <button onclick="getDelete()">刪除</button>
+    <p id="textDelete"></p>
+    <textarea cols="30" rows="12" id='jsonBox'>
+{
+    "name": "test",
+    "score": 80,
+    "exam": [
+        {
+            "score": 60,
+            "type": "test"
+        }
+    ]
+}
+</textarea>
+    <button onclick="getUpdate()">新增/更新</button>
+    <p id="textUpdate"></p>
+</body>
+<script>
+    function getFindAll() {
+        var text = httpGet("http://127.0.0.1:5000/find_all");
+        document.getElementById('textFindAll').innerHTML = text;
+    }
+    function getFind() {
+        var name = document.getElementById("textBoxFind").value;
+        var text = httpGet("http://127.0.0.1:5000/find?name=" + name);
+        document.getElementById('textFind').innerHTML = text;
+    }
+    function getDelete() {
+        var name = document.getElementById("textBoxDelete").value;
+        var text = httpGet("http://127.0.0.1:5000/delete?name=" + name);
+        document.getElementById('textDelete').innerHTML = text;
+    }
+    function getUpdate() {
+        var name = document.getElementById("jsonBox").value;
+        var text = httpGet("http://127.0.0.1:5000/update?data=" + name);
+        document.getElementById('textUpdate').innerHTML = text;
+    }
+    function httpGet(theUrl) {
+        var xmlhr = new XMLHttpRequest();
+        xmlhr.open("GET", theUrl, false);
+        xmlhr.send(null);
+        return xmlhr.responseText;
+    }
+</script>
+
+</html>

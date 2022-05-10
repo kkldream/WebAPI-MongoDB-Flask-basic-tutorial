@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Alan Lin",
+        "score": 53,
+        "exam": [
+            {
+                "score": 90,
+                "type": "Math"
+            },
+            {
+                "score": 40,
+                "type": "English"
+            }
+        ]
+    },
+    {
+        "name": "Jimmy Lin",
+        "score": 84,
+        "exam": [
+            {
+                "score": 66,
+                "type": "Math"
+            },
+            {
+                "score": 98,
+                "type": "English"
+            }
+        ]
+    },
+    {
+        "name": "David Huang",
+        "score": 76,
+        "exam": [
+            {
+                "score": 38,
+                "type": "Math"
+            },
+            {
+                "score": 98,
+                "type": "English"
+            },
+            {
+                "score": 92,
+                "type": "History"
+            }
+        ]
+    },
+    {
+        "name": "Kobe Chen",
+        "score": 75,
+        "exam": [
+            {
+                "score": 98,
+                "type": "Math"
+            },
+            {
+                "score": 60,
+                "type": "English"
+            },
+            {
+                "score": 68,
+                "type": "History"
+            }
+        ]
+    },
+    {
+        "name": "Eric Lin",
+        "score": 81,
+        "exam": [
+            {
+                "score": 78,
+                "type": "Math"
+            },
+            {
+                "score": 78,
+                "type": "History"
+            }
+        ]
+    },
+    {
+        "name": "Peter Huang",
+        "score": 83,
+        "exam": [
+            {
+                "score": 90,
+                "type": "History"
+            }
+        ]
+    },
+    {
+        "name": "Jacky Chen",
+        "score": 65,
+        "exam": [
+            {
+                "score": 60,
+                "type": "Math"
+            }
+        ]
+    },
+    {
+        "name": "John Wang",
+        "score": 75,
+        "exam": []
+    },
+    {
+        "name": "Sophia Hsu",
+        "score": 70,
+        "exam": [
+            {
+                "score": 56,
+                "type": "Math"
+            },
+            {
+                "score": 58,
+                "type": "English"
+            }
+        ]
+    },
+    {
+        "name": "Linda Chen",
+        "score": 52,
+        "exam": [
+            {
+                "score": 24,
+                "type": "Math"
+            },
+            {
+                "score": 34,
+                "type": "English"
+            },
+            {
+                "score": 98,
+                "type": "History"
+            }
+        ]
+    }
+]
